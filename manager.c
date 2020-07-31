@@ -40,9 +40,9 @@ int main(int argc, char** argv){
 	//ischild
 	if (serial_pid == 0){
 		if (VERBOSE){
-			execl("serial_read","serial_read","-r","-p",USB_PATH,"-exec","processData","-v",NULL);
+			execl("serialRead","serialRead","-r","-p",USB_PATH,"-exec","processData","-v",NULL);
 		}
-		execl("serial_read","serial_read","-r","-p",USB_PATH,"-exec","processData",NULL);
+		execl("serialRead","serialRead","-r","-p",USB_PATH,"-exec","processData",NULL);
 	}
 	
 

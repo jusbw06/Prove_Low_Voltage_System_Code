@@ -3,7 +3,7 @@ CFLAGS = -Wall -pedantic -g
 MAIN = serial_read processData manager motorGo
 all : $(MAIN)
 
-serial_read : serialReader.o
+serialRead : serialReader.o
 	$(CC) $(CFLAGS) -o serial_read serialReader.o
 
 processData : processData.o
